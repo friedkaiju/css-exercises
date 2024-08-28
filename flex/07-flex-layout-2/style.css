@@ -1,29 +1,91 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
+  padding: 0;
   min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
 }
 
 .header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 16px;
   height: 72px;
   background: darkmagenta;
   color: white;
-}
-
-.footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
+  font-size: 32px;
+  font-weight: 900;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  flex-shrink: 0;
+  top:72px;
+  bottom: 72px;
+  left: 0;
   width: 300px;
   background: royalblue;
-  box-sizing: border-box;
+}
+
+ul {
+  padding: 16px;
+}
+
+ul, li, li a {
+  display:flex;
+  flex-direction: column;
+  margin: 0;
+  border: 0;
+  color: white;
+  list-style-type:none;
+  text-decoration: none;
+  font-size: 24px;
+  gap: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  position: fixed;
+  flex-wrap: wrap;
+  top: 72px;
+  bottom: 72px;
+  left: 300px;
+  padding: 48px;
+  gap: 16px;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
+  display: flex;
+  flex-wrap: wrap;
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
+  width: 300px;
+  box-sizing:inherit;
+  padding: 8px;
 }

@@ -15,7 +15,36 @@ body {
   justify-content: center;
 }
 
+.text {
+  display: flex;
+  margin-left: 58px;
+  margin-bottom: 20px;
+}
+
+span {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-left: 15px;
+  gap: 99px;
+  flex-wrap: nowrap;
+}
+
+
+p {
+  padding: 0px;
+  margin:0px;
+  font-weight: bold;
+  font-size: 20px;
+  align-self: start;
+}
+
 .modal {
+  padding: 15px;
   background: white;
   width: 480px;
   border-radius: 10px;
@@ -33,6 +62,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: left;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -48,6 +79,7 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  align-self: start;
 }
 
 button {
@@ -60,6 +92,7 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  margin-left: 55px;
 }
 
 button.cancel {
